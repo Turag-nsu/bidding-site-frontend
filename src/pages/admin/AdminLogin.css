@@ -1,0 +1,81 @@
+/*
+//./pages/admin/AdminLogin.js
+import React, { useState } from 'react';
+import './AdminLogin.css';
+const AdminLogin = () => {
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const handleEmailChange = (e) => {
+        setEmail(e.target.value);
+    }
+    const handlePasswordChange = (e) => {
+        setPassword(e.target.value);
+    }
+    const handleSubmit = (e) => {
+
+    }
+    return (
+        <div className="admin-login">
+            <h1>Admin Login</h1>
+            <form onSubmit={handleSubmit}>
+                <input type="text" placeholder="Email" onChange={handleEmailChange} />
+                <input type="password" placeholder="Password" onChange={handlePasswordChange} />
+                <button
+                    type="submit"
+                    className="btn btn-primary"
+                >
+                    Login
+                </button>
+            </form>
+        </div>
+    );
+}
+
+export default AdminLogin;
+*/
+.admin-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+    
+}
+.admin-login h1 {
+    margin-bottom: 2rem;
+    color: whitesmoke;
+}
+
+.admin-login form {
+    background-color: antiquewhite;
+    padding: 4rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px 0 rgba(240, 224, 185, 0.667);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/*the input will have a underline*/
+
+.admin-login form input {
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    width: 20rem;
+}
+.admin-login form input:focus {
+    outline: none;
+}
+.admin-login form button {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--greyscale-shade-2, #E0E4E7);
+    width: 20rem;
+}
+.admin-login form button:hover {
+    background-color: var(--primary-color, #1A6AFF);
+    color: var(--white, #FFFFFF);
+}
