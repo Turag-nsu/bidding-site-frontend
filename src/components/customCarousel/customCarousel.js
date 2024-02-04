@@ -1,14 +1,13 @@
 import React, { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import ExampleCarouselImage from 'components/ExampleCarouselImage';
+// import ExampleCarouselImage from 'components/ExampleCarouselImage';
 
-function customCarousel() {
+function CustomCarousel() {
   const [index, setIndex] = useState(0);
 
   const handleSelect = (selectedIndex) => {
     setIndex(selectedIndex);
   };
-
   return (
     <Carousel activeIndex={index} onSelect={handleSelect} interval={3000}>
       {/* Set interval prop to the desired time between automatic slide transitions (in milliseconds) */}
@@ -39,4 +38,4 @@ function customCarousel() {
   );
 }
 
-export default customCarousel;
+export default CustomCarousel;
